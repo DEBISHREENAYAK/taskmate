@@ -1,7 +1,7 @@
-
 import os
 from pathlib import Path
 import  environ
+import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -120,3 +120,5 @@ LOGIN_REDIRECT_URL = "todolist"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL ="login"
+
+django_heroku.settings(locals())
