@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block title %}
+   <title> Welcome To Index Page</title> 
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+   <div class="row mt-5">
+      <div class="col-lg-4">
+         <img src="{% static 'images/stickynotes.jpg' %}" alt="Notes" class="rounded shadow-lg p-3 mb-5 bg-body rounded"width="360" height="250">
+       </div>
+       <div class="col-lg-4">
+         <img src="{% static 'images/stickynotes.jpg' %}" alt="Notes"class="rounded shadow-lg p-3 mb-5 bg-body rounded" width="360" height="250">
+       </div>
+       <div class="col-lg-4">
+         <img src="{% static 'images/stickynotes.jpg' %}" alt="Notes"class="rounded shadow-lg p-3 mb-5 bg-body rounded" width="360" height="250">
+       </div>
+   </div>
+    
+<div class = "row mt-5">
+   <div class="col-md-10 offset-md-1">
+     <center class = "h1 text-primary"><p>Quick And Easy To Use, Anytime, Anywhere!</p></center>
+     <center class = "h2"><p>Plan Your Day Better, Get Your Life Organized</p></center>
+     <center class = "h5"><p>TASKMATE Lets You Keep Track of Your Task In One Place</p></center>
+     <center><a href="{% url 'todolist' %}"<button type="button" class="btn btn-primary btn-lg  mt-3 shadow">Lets get started</button></a></center>
+   </div>
+</div>
+
+</div>
+{% endblock content %}
